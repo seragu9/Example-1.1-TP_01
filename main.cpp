@@ -1,5 +1,6 @@
 #include "mbed.h"
 #include "arm_book_lib.h"
+#include <cstdio>
 
 int main()
 {
@@ -10,8 +11,8 @@ int main()
     gasDetector.mode(PullDown);
 
     alarmLed = OFF;
-
-    while (true) {
+    printf("%s\n", "Hello World");
+    while\n (true) {
         if ( gasDetector == ON ) {
             alarmLed = ON;
         }
